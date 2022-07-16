@@ -1,0 +1,98 @@
+@use '../mixin/btnMixin.scss';
+@import '../variables/color.scss';
+@import '../variables/fontFamily.scss';
+@import '../variables/fontSize.scss';
+
+
+
+.header {
+
+    background-color: $primaryBackgroundColor;
+    height: 100px;
+
+
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin: 18px 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__menu {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+
+    &__menu_list {
+        display: flex;
+        
+        &-item a {
+            text-decoration: none;
+            position: relative;
+            cursor: pointer;
+            font-family: $fontFamily;
+            font-weight: 600;
+            font-size: $sectionSubTitleFontSize;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: #fff;
+        }
+
+        &-item a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            border-radius: 4px;
+            background-color: #fff;
+            bottom: -3px;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+
+        &-item a:hover::before {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+    }
+
+    &__menu_list li + li {
+        padding-left: 38px;
+    }
+
+    &__btn a {
+        background: #75E169;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 10px 42px;
+
+        font-family: $fontFamily;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #fff;
+        border: 2px solid transparent;
+        transition: ease-in .3s;
+    }
+
+    &__btn a:hover {
+        border: 2px solid #fff;
+        transition: ease-in .3s;
+    }
+}
