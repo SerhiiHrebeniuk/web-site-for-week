@@ -1,0 +1,120 @@
+
+@import '../variables/color.scss';
+@import '../variables/fontFamily.scss';
+@import '../variables/fontSize.scss';
+
+.hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+
+    &__container::before {
+        content: url('../images/shape sphere.267.svg');
+        position: absolute;
+        left: 240px;
+        top: 120px;
+        z-index: -7;
+    }
+
+    &__container::after {
+        content: url('../images/Layer 9 copy 3.svg');
+        position: absolute;
+        z-index: 1;
+        left: 63px;
+        bottom: 95px;
+    }
+
+        &__info {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &_text {
+            width: 838px;
+            z-index: 5;
+            margin-top: 171px;
+        }
+
+        &_text h1 {
+            font-family: $fontFamily;
+            font-weight: 900;
+            font-size: $mainTitleFontSize;
+            line-height: 125%;
+            color: $heroSectionTitleColor;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+
+        &_text p {
+            font-family: $fontFamily;
+            font-weight: 400;
+            font-size: $sectionSubTitleFontSize;
+            line-height: 140%;
+            color: #000;
+            width: 55%;
+            margin-bottom: 58px;
+        }    
+
+        &-btn {
+            padding: 23px 92px;
+            background-color: $buttonBackgroundColorNormal;
+            font-family: $fontFamily;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 100%;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 5px;
+            width: 30%;
+            margin-bottom: 180px;
+            cursor: pointer;
+        }
+
+        &-btn a {
+            font-family: $fontFamily;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 100%;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+        &_image {
+            margin-top: 171px;
+            margin-bottom: 41px;
+            width: 621px;
+            z-index: -5;
+            position: absolute;
+            right: -120px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &_image::before {
+           content: url('../images/shape  cylinder.275.svg');
+           position: absolute;
+           left: 185px;
+           top: -40px;
+        }
+    }
+}
+
+.hero::before {
+    content: url('../images/Ellipse 3.svg');
+    position: absolute;
+    bottom: 41px;
+}
+
+.hero::after {
+    content: url('../images/Ellipse 2.svg');
+    position: absolute;
+    width: 590px;
+    right: 20px;
+    top: 20%;
+    z-index: -7;
+}
