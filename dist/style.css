@@ -178,3 +178,153 @@
   top: 20%;
   z-index: -7;
 }
+
+.userInfo {
+  background-color: #DAECFF;
+  width: 100%;
+  height: auto;
+}
+.userInfo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.userInfo__container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+  color: #111111;
+  margin-top: 120px;
+  padding: 0 8px;
+  margin-bottom: 100px;
+}
+.userInfo__item {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+.userInfo__item.active .userInfo__item__text {
+  max-height: 250px;
+  animation: fade 1s ease-in-out;
+}
+.userInfo__item.active .userInfo__item__title .green {
+  display: none;
+}
+.userInfo__item.active .userInfo__item__title .blue {
+  display: block;
+  margin-right: 30px;
+  animation: show 1s ease-in-out;
+}
+.userInfo__item__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: fit-content;
+  padding: 20px 44px;
+  height: 60px;
+}
+.userInfo__item__title .box {
+  display: flex;
+  align-items: center;
+}
+.userInfo__item__title .box .green {
+  display: block;
+  margin-right: 30px;
+  animation: show 1.4s ease-in-out;
+}
+.userInfo__item__title .box .blue {
+  display: none;
+}
+.userInfo__item__title .box p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  color: #111111;
+  transition: all 1.4s;
+}
+.userInfo__item__title img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in;
+}
+.userInfo__item.active img {
+  transform: rotate(180deg);
+}
+.userInfo__item.active .userInfo__item__title p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 125%;
+  color: #111111;
+  animation: text 1.4s ease-in-out;
+}
+.userInfo__item__text {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+  padding: 0 44px;
+  display: flex;
+}
+.userInfo__item__text .line {
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.userInfo__item__text p {
+  text-align: justify;
+  margin-bottom: 20px;
+  max-width: 90%;
+  margin-left: 43px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  color: #000;
+}
+.userInfo .userInfo__item:last-child {
+  margin-bottom: 120px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transition: transform 1s ease-in-out;
+  }
+  to {
+    opacity: 1;
+    transition: transform 1.4s ease-in-out;
+  }
+}
+@keyframes text {
+  from {
+    opacity: 0;
+    transition: transform 1.4s ease-in-out;
+  }
+  to {
+    opacity: 1;
+    transition: transform 1.4s ease-in-out;
+  }
+}

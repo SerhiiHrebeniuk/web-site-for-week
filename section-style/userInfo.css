@@ -7,6 +7,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
+}
+.userInfo__container::after {
+  content: url("../images/bag.149.png");
+  position: absolute;
+  bottom: 85px;
+  right: -250px;
 }
 .userInfo__container h2 {
   font-family: "Montserrat", sans-serif;

@@ -1,0 +1,117 @@
+.carousel {
+  width: 100%;
+}
+.carousel__container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+.carousel__container::before {
+  content: url("../images/shape sphere.269.svg");
+  position: absolute;
+  top: 120px;
+  left: -150px;
+}
+.carousel__container::after {
+  content: url("../images/shape wave.257 copy.svg");
+  position: absolute;
+  bottom: 40px;
+  right: 60px;
+}
+.carousel__container h2 {
+  margin-top: 120px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 125%;
+  color: #000;
+}
+.carousel__slider {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  position: relative;
+  width: 100%;
+  max-width: 1170px;
+  height: 450px;
+  overflow: hidden;
+}
+.carousel__slider_item {
+  width: 100%;
+  max-width: 570px;
+  height: 450px;
+  position: absolute;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel__slider_item-box {
+  width: 90%;
+  height: 90%;
+  border: 2px solid #67AEFC;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.carousel__slider_item-box .info {
+  width: 50%;
+  height: 70%;
+  padding-left: 20px;
+}
+.carousel__slider_item-box .info h4 {
+  margin-bottom: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 125%;
+  color: #000;
+}
+.carousel__slider_item-box .info p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000;
+}
+.carousel__slider_item-box img {
+  width: 50%;
+  height: 60%;
+  padding-right: 10px;
+}
+.carousel__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  margin-bottom: 130px;
+  cursor: pointer;
+}
+.carousel__button_left, .carousel__button_right {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #67AEFC;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel__button_left .filter-white:active, .carousel__button_right .filter-white:active {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(318deg) brightness(105%) contrast(101%);
+}
+.carousel__button_left:active, .carousel__button_right:active {
+  background-color: #67AEFC;
+}
+.carousel__button_left {
+  margin-right: 30px;
+}
