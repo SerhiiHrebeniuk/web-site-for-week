@@ -5,4 +5,174 @@
 
 .userInfo {
     background-color: $secondaryBackgroundColor;
+    width: 100%;
+    height: auto;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__container h2 {
+        font-family: $fontFamily;
+        font-weight: 800;
+        font-size: $sectionTitleFontSize;
+        line-height: 125%;
+        text-align: center;
+        color: #111111;
+        margin-top: 120px;
+        padding: 0 8px;
+        margin-bottom: 100px;
+    }
+
+    &__item {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 20px;
+        border-radius: 15px;
+
+        &.active .userInfo__item__text {
+            max-height: 250px;
+            animation: fade 1s ease-in-out;
+        }
+
+        &.active .userInfo__item__title .green {
+            display: none;
+        }
+
+        &.active .userInfo__item__title .blue {
+            display: block;
+            margin-right: 30px;
+            animation: show 1s ease-in-out;
+        }
+
+        &__title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-basis: fit-content;
+            padding: 20px 44px;
+            height: 60px;
+
+            .box {
+                display: flex;
+                align-items: center;
+
+                .green {
+                    display: block;
+                    margin-right: 30px;
+                    animation: show 1.4s ease-in-out;
+                }
+
+                .blue {
+                    display: none;
+                }
+            }
+
+            .box p {
+                font-family: $fontFamily;
+                font-weight: 400;
+                font-size: $mainSubTitleFontSize;
+                line-height: 175%;
+                color: #111111;
+                transition: all 1.4s;
+            }
+        }
+
+        &__title img {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            transition: transform .5s ease-in;
+        }
+
+        &.active img {
+           transform: rotate(180deg);
+        }
+
+        &.active .userInfo__item__title p {
+            font-family: $fontFamily;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 125%;
+            color: #111111;
+            animation: text 1.4s ease-in-out;
+        }
+
+        &__text {
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1.4s ease;
+            padding: 0 44px;
+            display: flex;
+
+            .line {
+                border: 1px solid #000;
+                margin-bottom: 20px;
+                margin-left: 10px;
+            }
+            
+        }
+
+        &__text p {
+            text-align: justify;
+            margin-bottom: 20px;
+            max-width: 90%;
+            margin-left: 43px;
+            font-family: $fontFamily;
+            font-weight: 400;
+            font-size: $mainSubTitleFontSize;
+            line-height: 175%;
+            color: #000;
+        }
+    }
+
+    .userInfo__item:last-child {
+        margin-bottom: 120px;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transition: transform 1s ease-in-out;
+    }
+
+    to {
+        opacity: 1;
+        transition: transform 1.4s ease-in-out;
+    }
+}
+
+@keyframes text {
+    from {
+        opacity: 0;
+        transition: transform 1.4s ease-in-out;
+    }
+
+    to {
+        opacity: 1;
+        transition: transform 1.4s ease-in-out;
+    }
 }
