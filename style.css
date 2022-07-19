@@ -638,3 +638,98 @@
   top: 0;
   left: -215px;
 }
+
+.contact {
+  width: 100%;
+  height: auto;
+  background-color: #DAECFF;
+}
+.contact__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.contact__container_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 470px;
+  flex-wrap: wrap;
+  position: relative;
+}
+.contact__container_box h2 {
+  margin-top: 180px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 125%;
+  color: #111111;
+}
+.contact__container_box p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  text-align: center;
+  color: #111111;
+  margin-bottom: 30px;
+}
+.contact__container_box_form {
+  margin-bottom: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.contact__container_box_form input::placeholder {
+  padding-left: 14px;
+}
+.contact__container_box_form input:not(:last-child) {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 58px;
+  background: #fff;
+  border: 1px solid #6EB1FB;
+  border-radius: 10px;
+}
+.contact__container_box_form input[type=text] {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #939393;
+}
+.contact__container_box_form button {
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #F9F9F9;
+  background-color: #6BD75F;
+  width: 270px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact__container_box::before {
+  content: url("../images/phone call.243.png");
+  position: absolute;
+  top: 230px;
+  left: -450px;
+}
+.contact__container_box::after {
+  content: url("../images/Group 175.svg");
+  position: absolute;
+  top: 261px;
+  right: -380px;
+}

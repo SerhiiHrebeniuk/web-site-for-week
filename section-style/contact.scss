@@ -1,0 +1,111 @@
+@import '../variables/color.scss';
+@import '../variables/fontFamily.scss';
+@import '../variables/fontSize.scss';
+
+.contact {
+    width: 100%;
+    height: auto;
+    background-color: $secondaryBackgroundColor;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+
+        &_box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 470px;
+            flex-wrap: wrap;
+            position: relative;
+            
+            h2 {
+                margin-top: 180px;
+                margin-bottom: 10px;
+                font-family: $fontFamily;
+                font-weight: 800;
+                font-size: $sectionTitleFontSize;
+                line-height: 125%;
+                color: #111111;
+            }
+    
+            p {
+                font-family: $fontFamily;
+                font-weight: 400;
+                font-size: $mainSubTitleFontSize;
+                line-height: 175%;
+                text-align: center;
+                color: #111111;
+                margin-bottom: 30px;
+            }
+    
+            &_form {
+                margin-bottom: 130px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 100%;
+    
+
+                input::placeholder {
+                    padding-left: 14px;
+                }
+    
+                input:not(:last-child) {
+                    margin-bottom: 20px;
+                    width: 100%;
+                    height: 58px;
+                    background: #fff;
+                    border: 1px solid #6EB1FB;
+                    border-radius: 10px;
+                }
+
+                input[type="text"] {
+                    font-family: $fontFamily;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #939393;
+                }
+    
+                button {
+                    margin-top: 30px;
+                    font-family: $fontFamily;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #F9F9F9;
+                    background-color: #6BD75F;
+                    width: 270px;
+                    height: 60px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &_box::before {
+            content: url('../images/phone call.243.png');
+            position: absolute;
+            top: 230px;
+            left: -450px;
+        }
+
+        &_box::after {
+            content: url('../images/Group 175.svg');
+            position: absolute;
+            top: 261px;
+            right: -380px;
+        }
+
+    }
+}
