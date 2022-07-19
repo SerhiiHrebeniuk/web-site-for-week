@@ -1,0 +1,97 @@
+@import '../variables/color.scss';
+@import '../variables/fontFamily.scss';
+@import '../variables/fontSize.scss';
+
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: $footerBackgroundColor;
+
+    &__container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+
+        &_about-us {
+            width: 100%;
+            display: flex;
+            gap: 190px;
+            flex-wrap: wrap;
+            margin-top: 110px;
+            margin-bottom: 120px;
+
+            .social-media {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+                &_logo {
+                    margin-bottom: 46px;
+                }
+
+                &_icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    text-decoration: none;
+                }
+            }
+
+            .personal {
+                display: flex;
+                flex-direction: column;
+
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    
+                    p, a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-family: $fontFamily;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 24px;
+                        text-transform: uppercase;
+                    }
+                }
+
+                &__item:not(:last-child) {
+                    margin-bottom: 13px;
+                }
+            }
+
+            .contact-email {
+                a {
+                    font-family: $fontFamily;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-transform: lowercase;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &_rights-policy {
+            margin-bottom: 80px;
+
+            p {
+                font-family: $fontFamily;
+                font-weight: 400;
+                font-size: $mainSubTitleFontSize;
+                line-height: 175%;
+                color: #fff;
+            }
+        }
+    }
+}
