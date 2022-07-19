@@ -564,3 +564,77 @@
   margin-right: 20px;
   margin-bottom: 20px;
 }
+
+.question {
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.question__container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 140px;
+  margin-bottom: 105px;
+  position: relative;
+}
+.question__container_left {
+  width: 57%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.question__container_left h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 125%;
+  color: #111111;
+  margin-bottom: 53px;
+}
+.question__container_left p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #111111;
+  margin-bottom: 45px;
+}
+.question__container_left .questionBtn {
+  width: 45%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  margin-bottom: 0;
+}
+.question__container_left .questionBtn a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+}
+.question__container_right {
+  width: 43%;
+  height: auto;
+}
+.question__container_right img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.question__container::before {
+  content: url("../images/shape sphere.267.svg");
+  position: absolute;
+  top: 0;
+  left: -215px;
+}

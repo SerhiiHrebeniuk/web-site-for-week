@@ -1,0 +1,87 @@
+@import '../variables/color.scss';
+@import '../variables/fontFamily.scss';
+@import '../variables/fontSize.scss';
+
+
+.question {
+    width: 100%;
+    height: auto;
+    background: #fff;
+
+    &__container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 140px;
+        margin-bottom: 105px;
+        position: relative; 
+
+        &_left {
+            width: 57%;
+            height: auto;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            h2 {
+                font-family: $fontFamily;
+                font-weight: 800;
+                font-size: $sectionTitleFontSize;
+                line-height: 125%;
+                color: #111111;
+                margin-bottom: 53px;
+            }
+
+            p {
+                font-family: $fontFamily;
+                font-weight: 400;
+                font-size: $mainSubTitleFontSize;
+                line-height: 140%;
+                color: #111111;
+                margin-bottom: 45px;
+            }
+
+            .questionBtn {
+                width: 45%;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 0;
+                margin-bottom: 0;
+
+                a {
+                    font-family:  $fontFamily;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+            }
+        }
+
+        &_right {
+            width: 43%;
+            height: auto;
+
+            img {
+                width: auto;
+                height: 100%;
+                object-fit: cover;
+                overflow: hidden;
+            }
+        }
+    }
+
+    &__container::before {
+        content: url('../images/shape sphere.267.svg');
+        position: absolute;
+        top: 0;
+        left: -215px;;
+    }  
+}
