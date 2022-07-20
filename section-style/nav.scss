@@ -75,6 +75,10 @@
         padding-left: 38px;
     }
 
+    &__btn:active {
+        transform: scale(0.95);
+    }
+
     &__btn a {
         background: #75E169;
         border-radius: 5px;

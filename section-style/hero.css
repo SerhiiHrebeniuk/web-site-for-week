@@ -59,6 +59,9 @@
   margin-bottom: 180px;
   cursor: pointer;
 }
+.hero__info-btn:active {
+  transform: scale(0.95);
+}
 .hero__info-btn a {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;

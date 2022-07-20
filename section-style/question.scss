@@ -63,6 +63,10 @@
                     color: #fff;
                 }
             }
+
+            .questionBtn:active {
+                transform: scale(0.95);
+            }
         }
 
         &_right {

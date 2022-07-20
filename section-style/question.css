@@ -55,6 +55,9 @@
   text-transform: uppercase;
   color: #fff;
 }
+.question__container_left .questionBtn:active {
+  transform: scale(0.95);
+}
 .question__container_right {
   width: 43%;
   height: auto;

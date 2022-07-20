@@ -80,6 +80,9 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.contact__container_box_form button:active {
+  transform: scale(0.95);
+}
 .contact__container_box::before {
   content: url("../images/phone call.243.png");
   position: absolute;

@@ -57,6 +57,9 @@
 .header__menu_list li + li {
   padding-left: 38px;
 }
+.header__btn:active {
+  transform: scale(0.95);
+}
 .header__btn a {
   background: #75E169;
   border-radius: 5px;
