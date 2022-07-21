@@ -6,9 +6,10 @@
 .hero__container::before {
   content: url("../images/shape sphere.267.svg");
   position: absolute;
-  left: 240px;
-  top: 120px;
+  left: 9%;
+  top: 12%;
   z-index: -7;
+  display: none;
 }
 .hero__container::after {
   content: url("../images/Layer 9 copy 3.svg");
@@ -16,6 +17,7 @@
   z-index: 1;
   left: 63px;
   bottom: 95px;
+  display: none;
 }
 .hero__info {
   display: flex;
@@ -87,12 +89,14 @@
   position: absolute;
   left: 185px;
   top: -40px;
+  display: none;
 }
 
 .hero::before {
   content: url("../images/Ellipse 3.svg");
   position: absolute;
   bottom: 41px;
+  display: none;
 }
 
 .hero::after {
@@ -102,4 +106,5 @@
   right: 20px;
   top: 20%;
   z-index: -7;
+  display: none;
 }

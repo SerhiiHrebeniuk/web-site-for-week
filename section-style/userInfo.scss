@@ -184,3 +184,56 @@
         transition: transform 1.4s ease-in-out;
     }
 }
+
+
+@media screen and (max-width: 1700px) {
+    .userInfo__container::after {
+
+        display: none;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .userInfo__item__title .box .green {
+        margin-right: 10px;
+    }
+
+    .userInfo__item__title {
+        padding: 20px 15px;
+    }
+
+    .box {
+        p {
+            text-align: left;
+        }
+    }
+
+    .userInfo__item.active .userInfo__item__text {
+        max-height: 1090px;
+        animation: fade 1s ease-in-out;
+    }
+
+    .userInfo__item__text {
+        padding: 0 15px;
+    }
+
+    .userInfo__item.active .userInfo__item__title p {
+        font-size: 16px;
+    }
+
+    .userInfo__container h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 23px;
+        line-height: 150%;
+        padding: 0;
+    }
+
+    .userInfo .userInfo__item:last-child {
+        margin-bottom: 30px;
+    }
+
+    .userInfo__container::after {
+        display: none;
+    }
+}
