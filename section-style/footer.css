@@ -65,6 +65,9 @@
   text-decoration: none;
   cursor: pointer;
 }
+.footer__container .social-media_icon.screen {
+  display: none;
+}
 .footer__container_rights-policy {
   margin-bottom: 80px;
 }
@@ -74,4 +77,29 @@
   font-size: 18px;
   line-height: 175%;
   color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .footer__container_about-us {
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer__container_about-us .social-media_icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer__container .social-media_icon.screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+  }
 }

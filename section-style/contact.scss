@@ -113,3 +113,46 @@
 
     }
 }
+
+
+@media screen and (max-width: 1235px) {
+    .contact__container_box::after {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1180px) {
+    .contact__container_box::before {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact__container_box_image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact__container_box h2 {
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact__container_box_form button {
+        width: 100%;
+    }
+
+    .contact__container_box h2 {
+        margin-top: 42px;
+        font-size: 23px;
+        text-align: center;
+        line-height: 150%;
+    }
+
+    .contact__container_box p {
+        font-size: 17px;
+    }
+}

@@ -61,7 +61,6 @@ prevSlide.addEventListener("click", function () {
 });
 
 
-
 const menu = document.querySelector(".menu__burger_list");
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".header__burgerMenu");

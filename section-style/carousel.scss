@@ -187,6 +187,10 @@
         justify-content: space-evenly;
         margin-bottom: 70px;
     }
+
+    .question__container::before {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -219,4 +223,14 @@
         width: 100%;
         font-size: 23px;
     }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel__container::before {
+        content: url('../images/shape sphere.269.svg');
+        display: block;
+        position: absolute;
+        top: 21px;
+        left: -40px;
+     }
 }
